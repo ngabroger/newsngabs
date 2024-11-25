@@ -40,7 +40,8 @@ fun NewsCard(article : ArticlesItem, onClick: () -> Unit){
             {
                 Text(
                     text = article.title!!,
-                    style = MaterialTheme.typography.displayMedium
+                    style = MaterialTheme.typography.displayMedium,
+                    maxLines = 2
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(

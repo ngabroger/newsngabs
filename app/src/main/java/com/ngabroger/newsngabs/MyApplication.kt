@@ -1,7 +1,8 @@
 package com.ngabroger.newsngabs
 
 import android.app.Application
-import com.ngabroger.newsngabs.core.modules.newsModule
+import com.ngabroger.newsngabs.core.modules.dataStore
+import com.ngabroger.newsngabs.core.modules.networkModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -12,7 +13,7 @@ class MyApplication : Application() {
         startKoin {
             androidContext(this@MyApplication)
             modules(
-                newsModule
+                dataStore+networkModule
             )
         }
     }

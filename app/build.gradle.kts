@@ -18,8 +18,8 @@ android {
 
 
 
-        buildConfigField("String", "NEWS_API_KEY", "\"https://newsapi.org/v2/\"")
-        buildConfigField("String", "API_KEY", "\"94fcf1c4d150437a972ff72444695828\"")
+        buildConfigField("String", "DICODING_API", "\"https://story-api.dicoding.dev/v1\"")
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -86,4 +86,8 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
+
+    // DataStore
+    implementation(libs.androidx.datastore.preferences)
+    implementation(libs.androidx.datastore.core)
 }

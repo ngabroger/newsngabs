@@ -7,7 +7,7 @@ import androidx.navigation.compose.rememberNavController
 @Composable
 fun AppNavigation() {
 val navController = rememberNavController()
-    NavHost(navController =navController , startDestination = "news"){
+    NavHost(navController =navController , startDestination = "login"){
         //add composable screens here
         newsNavigation(navController)
     }
